@@ -1,0 +1,8 @@
+version: '3'
+services:
+    simulator:
+        image: kanashiro/interscsimulator:test
+        environment:
+            - RABBITMQ_HOST=localhost
+        network_mode: "host"
+        tty: true

@@ -1,0 +1,480 @@
+<0.41.0>|Trace Aggregator|Trace.Emitter|none|2016/4/19 11:36:32|dataflow_example_run-boudevil@volt.atlas.edf.fr|Trace Management|4|Trace aggregator created, trace filename is '/home/boudevil/Projects/Sim-Diasca/sources/local-clones/sim-diasca-current-develop-branch/sim-diasca/src/core/src/dataflow/tests/dataflow_example_test.traces', trace type is 'log_mx_traces', and trace title is 'Ceylan'.
+
+<0.2.0>|(test)|Test.Uncategorized|none|2016/4/19 11:36:32|dataflow_example_run-boudevil@volt.atlas.edf.fr|Test|4|Starting test dataflow_example_test.
+<0.46.0>|Plugin Manager|Core.PluginManagement|none|2016/4/19 11:36:32|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Initialising plugin manager, with following 0 plugin directories: 
+<0.46.0>|Plugin Manager|Core.PluginManagement|none|2016/4/19 11:36:32|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Plugin manager started, but no plugin found.
+<0.46.0>|Plugin Manager|Core.PluginManagement|none|2016/4/19 11:36:32|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Notifying all plugins that the simulator starts, giving them a chance of updating the requested configuration changes.
+<0.46.0>|Plugin Manager|Core.PluginManagement|none|2016/4/19 11:36:32|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Final requested configuration changes: {configuration_changes,undefined}.
+<0.44.0>|Deployment manager for Sim-Diasca Dataflow Example|Core.Deployment.Manager|none|2016/4/19 11:36:32|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Creating a new deployment manager with simulation settings: + simulation name is 'Sim-Diasca Dataflow Example'.
+ + simulation tick duration is exactly 86400.000000 (virtual) seconds, which corresponds to a fundamental frequency of approximately 0.000 Hz.
+ + simulation will run in batch mode.
+ + evaluation will be totally reproducible, using default seed.
+ with deployment settings: + eligible computing hosts were described with {use_host_file_otherwise_local,
+                                              "sim-diasca-host-candidates.txt"}.
+ + unavailable nodes will be tolerated.
+ + the simulation deployment package will be generated on-the-fly and saved in a deployment archive file, after the simulation engine will have been rebuilt.
+ + a clean-up of any Erlang node whose name matches the target one will be performed on all listed computing nodes
+ + no additional element will be deployed.
+ + firewall restrictions are: [{epmd_port,4506},{tcp_restricted_range,{50000,55000}}]
+ + no crash resilience required
+ and with load balancing settings: + placement policy will be round-robin.
+
+Versions are:
+ - for the Erlang user virtual machine: R18B
+ - for the Common layer: 0.1
+ - for the WOOPER layer: 1.0
+ - for the Traces layer: 0.3
+ - for Sim-Diasca engine: 2.2.10
+
+System settings are: + number of cores: 8
+ + size of a VM word: 8 bytes
+ + operating system: Arch Linux
+ + number of existing Erlang processes: 39 
+ + total physical memory: 15 GiB, 607 MiB and 640 KiB
+ + RAM memory used: 1 GiB, 268 MiB and 212 KiB, over a total of 15 GiB, 607 MiB and 640 KiB (8.1%)
+ + no swap found
+ + user name: boudevil
+ + user home directory: /home/boudevil
+ + current directory: /home/boudevil/Projects/Sim-Diasca/sources/local-clones/sim-diasca-current-develop-branch/sim-diasca/src/core/src/dataflow/tests
+ + current disk usage:
+Filesystem                     Size  Used Avail Use% Mounted on
+dev                            7.8G     0  7.8G   0% /dev
+run                            7.8G  772K  7.8G   1% /run
+/dev/sda2                       40G   18G   21G  47% /
+tmpfs                          7.8G  204K  7.8G   1% /dev/shm
+tmpfs                          7.8G     0  7.8G   0% /sys/fs/cgroup
+tmpfs                          7.8G   14M  7.8G   1% /tmp
+/dev/sda1                      511M   26M  486M   6% /boot
+/dev/mapper/my-encrypted-home  419G  198G  200G  50% /home
+tmpfs                          1.6G   24K  1.6G   1% /run/user/1000
+;
+Deployment time-out is set to 6 minutes and 41 seconds.
+Cookie is '0a05275a-58b4-446f-8c47-6824ec5d5aff'.
+Current tick change policy is: change_initiated.
+<0.44.0>|Deployment manager for Sim-Diasca Dataflow Example|Core.Deployment.Manager|none|2016/4/19 11:36:32|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|No host file 'sim-diasca-host-candidates.txt' found, defaulting to a simulation running on local host only.
+<0.44.0>|Deployment manager for Sim-Diasca Dataflow Example|Core.Deployment.Manager|none|2016/4/19 11:36:32|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|The following 1 host candidates (with users) were specified:  + boudevil@volt.atlas.edf.fr
+
+<0.46.0>|Plugin Manager|Core.PluginManagement|none|2016/4/19 11:36:32|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Notifying all plugins of event 'on_deployment_start'.
+<0.47.0>|Host manager for the user host|Core.Deployment.ComputingHostManager|none|2016/4/19 11:36:32|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Creating a new manager for computing host 'localhost', with node name 'Sim-Diasca_Dataflow_Example-boudevil'.
+<0.47.0>|Host manager for the user host|Core.Deployment.ComputingHostManager|none|2016/4/19 11:36:32|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Node Sim-Diasca_Dataflow_Example-boudevil on host localhost is not available, it will be launched from scratch.
+<0.47.0>|Host manager for the user host|Core.Deployment.ComputingHostManager|none|2016/4/19 11:36:32|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Starting the creation of node 'Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr' on host 'localhost'.
+<0.47.0>|Host manager for the user host|Core.Deployment.ComputingHostManager|none|2016/4/19 11:36:32|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Cleaning up was requested, with clean-up script '/home/boudevil/Projects/Sim-Diasca/sources/local-clones/sim-diasca-current-develop-branch/sim-diasca/src/core/src/deployment/node-cleaner.sh', resulting in full command '/home/boudevil/Projects/Sim-Diasca/sources/local-clones/sim-diasca-current-develop-branch/sim-diasca/src/core/src/deployment/node-cleaner.sh Sim-Diasca_Dataflow_Example-boudevil'.
+
+<0.47.0>|Host manager for the user host|Core.Deployment.ComputingHostManager|none|2016/4/19 11:36:32|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Local clean-up command succeeded and resulted in following output: 'Will kill all lingering Erlang nodes on volt.atlas.edf.fr, if owned by boudevil, and having a node name matching 'Sim-Diasca_Dataflow_Example-boudevil'.
+  No node 'Sim-Diasca_Dataflow_Example-boudevil' exists anymore.
+NOEXIST
+epmd stopped with return code 0.'.
+<0.47.0>|Host manager for the user host|Core.Deployment.ComputingHostManager|none|2016/4/19 11:36:32|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Trying to launch node Sim-Diasca_Dataflow_Example-boudevil on host localhost with user boudevil (in the background: true) based on following command: 'erl -setcookie "0a05275a-58b4-446f-8c47-6824ec5d5aff" -name Sim-Diasca_Dataflow_Example-boudevil  -kernel inet_dist_listen_min 50000 inet_dist_listen_max 55000   -noshell -smp auto +sbt tnnps  +K true +A 128 +P 524288  & ' and following environment:  + ERL_EPMD_PORT = 4506
+
+<0.44.0>|Deployment manager for Sim-Diasca Dataflow Example|Core.Deployment.Manager|none|2016/4/19 11:36:32|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Directory wooper successfully rebuilt.
+<0.47.0>|Host manager for the user host|Core.Deployment.ComputingHostManager|none|2016/4/19 11:36:32|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Node Sim-Diasca_Dataflow_Example-boudevil on host localhost (launched in the background) successfully launched and checked (which took 140 ms on a time-out of 400000 ms).
+<0.47.0>|Host manager for the user host|Core.Deployment.ComputingHostManager|none|2016/4/19 11:36:32|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Deployment succeeded for host 'localhost', notifying the deployment manager.
+<0.47.0>|Host manager for the user host|Core.Deployment.ComputingHostManager|none|2016/4/19 11:36:32|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Sending Sim-Diasca deployment agent and its prerequisites to node Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr, which runs the following Erlang version: 18.
+<0.44.0>|Deployment manager for Sim-Diasca Dataflow Example|Core.Deployment.Manager|none|2016/4/19 11:36:33|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Directory sim-diasca successfully rebuilt.
+<9136.43.0>|Deployment agent on volt|Core.Deployment|undefined|19/4/2016 11:36:33|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Standalone.Deployment|4|Deployment agent running on node 'Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr', with version 18 of the virtual machine, requesting the simulation package from <5793.47.0>. Current scheduler count: 8.
+<0.47.0>|Host manager for the user host|Core.Deployment.ComputingHostManager|none|2016/4/19 11:36:33|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Node 'Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr', corresponding to deployment agent <9136.43.0>, requested the package, which is being sent to it.
+<0.47.0>|Host manager for the user host|Core.Deployment.ComputingHostManager|none|2016/4/19 11:36:33|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Waiting for the package to be sent locally by the deployment manager.
+<9136.43.0>|Deployment agent on volt|Core.Deployment|undefined|19/4/2016 11:36:33|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Standalone.Deployment|6|Deployment directory '/tmp/sim-diasca-Sim-Diasca_Dataflow_Example-boudevil-2016-4-19-at-11h-36m-32s-0a05275a' not already existing, will create it.
+<0.44.0>|Deployment manager for Sim-Diasca Dataflow Example|Core.Deployment.Manager|none|2016/4/19 11:36:33|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Directory common successfully rebuilt.
+<0.44.0>|Deployment manager for Sim-Diasca Dataflow Example|Core.Deployment.Manager|none|2016/4/19 11:36:33|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Directory traces successfully rebuilt.
+<0.44.0>|Deployment manager for Sim-Diasca Dataflow Example|Core.Deployment.Manager|none|2016/4/19 11:36:33|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Building simulation package from the base root simulator directory '/home/boudevil/Projects/Sim-Diasca/sources/local-clones/sim-diasca-current-develop-branch'.
+Following deployment selection rules have been applied:
+[{"wooper",code,
+  [{exclude_directories,[".svn","examples"]},
+   {exclude_suffixes,["_test.beam"]},
+   {keep_only_suffixes,[".beam"]},
+   rebuild]},
+ {"sim-diasca",code,
+  [{exclude_directories,[".svn"]},
+   {exclude_suffixes,["_test.beam"]},
+   {keep_only_suffixes,[".beam"]},
+   rebuild]},
+ {"common",code,
+  [{exclude_directories,[".svn"]},
+   {exclude_suffixes,["_test.beam"]},
+   {keep_only_suffixes,[".beam"]},
+   rebuild]},
+ {"traces",code,
+  [{exclude_directories,[".svn"]},
+   {exclude_suffixes,["_test.beam"]},
+   {keep_only_suffixes,[".beam"]},
+   rebuild]}].
+
+Following files have been selected:
+["common/src/data-management/const_table.beam",
+ "common/src/data-management/hashtable.beam",
+ "common/src/data-management/lazy_hashtable.beam",
+ "common/src/data-management/list_hashtable.beam",
+ "common/src/data-management/map_hashtable.beam",
+ "common/src/data-management/option_list.beam",
+ "common/src/data-management/pair.beam",
+ "common/src/data-management/preferences.beam",
+ "common/src/data-management/simple_parse_transform_target.beam",
+ "common/src/data-management/table.beam",
+ "common/src/data-management/tracked_hashtable.beam",
+ "common/src/data-management/tree.beam","common/src/maths/bounding_box.beam",
+ "common/src/maths/linear.beam","common/src/maths/linear_2D.beam",
+ "common/src/maths/linear_3D.beam","common/src/maths/math_utils.beam",
+ "common/src/maths/polygon.beam","common/src/maths/rk4_solver.beam",
+ "common/src/user-interface/asset_tool_app.beam",
+ "common/src/user-interface/gui.beam",
+ "common/src/user-interface/gui_canvas.beam",
+ "common/src/user-interface/gui_color.beam",
+ "common/src/user-interface/gui_text.beam",
+ "common/src/utils/app_facilities.beam","common/src/utils/basic_utils.beam",
+ "common/src/utils/cipher_utils.beam","common/src/utils/code_utils.beam",
+ "common/src/utils/common_parse_transform.beam",
+ "common/src/utils/example_parse_transform.beam",
+ "common/src/utils/executable_utils.beam","common/src/utils/file_utils.beam",
+ "common/src/utils/fsm_utils.beam","common/src/utils/graph_utils.beam",
+ "common/src/utils/list_utils.beam","common/src/utils/meta_utils.beam",
+ "common/src/utils/most_basic_example_app.beam",
+ "common/src/utils/net_utils.beam","common/src/utils/random_utils.beam",
+ "common/src/utils/rest_utils.beam","common/src/utils/sms_utils.beam",
+ "common/src/utils/system_utils.beam","common/src/utils/test_facilities.beam",
+ "common/src/utils/text_utils.beam","common/src/utils/time_utils.beam",
+ "common/src/utils/unit_utils.beam","sim-diasca/meta_utils.beam",
+ "sim-diasca/src/core/generic/src/class_Describable.beam",
+ "sim-diasca/src/core/generic/src/class_Graphable.beam",
+ "sim-diasca/src/core/mesh/src/class_Mesh.beam",
+ "sim-diasca/src/core/space/src/class_Locatable.beam",
+ "sim-diasca/src/core/src/core_utils.beam",
+ "sim-diasca/src/core/src/data-management/data-exchange/class_DataExchangeTestActor.beam",
+ "sim-diasca/src/core/src/data-management/data-exchange/class_DataExchanger.beam",
+ "sim-diasca/src/core/src/data-management/data-storage/class_DataLogger.beam",
+ "sim-diasca/src/core/src/data-management/data-storage/class_DataLoggingActor.beam",
+ "sim-diasca/src/core/src/data-management/monitoring/performance/class_PerformanceTracker.beam",
+ "sim-diasca/src/core/src/data-management/monitoring/performance/class_PerformanceTracker_TestActor.beam",
+ "sim-diasca/src/core/src/data-management/monitoring/probe/class_Probe.beam",
+ "sim-diasca/src/core/src/data-management/monitoring/probe/generate_plots_for_time_series.beam",
+ "sim-diasca/src/core/src/data-management/result-management/class_ResultManager.beam",
+ "sim-diasca/src/core/src/data-management/result-management/class_ResultProducer.beam",
+ "sim-diasca/src/core/src/dataflow/class_DataflowActor.beam",
+ "sim-diasca/src/core/src/deployment/class_ComputingHostManager.beam",
+ "sim-diasca/src/core/src/deployment/class_DeploymentManager.beam",
+ "sim-diasca/src/core/src/deployment/deployment_agent.beam",
+ "sim-diasca/src/core/src/instance-creation/class_LoadBalancer.beam",
+ "sim-diasca/src/core/src/instance-creation/instance_loading.beam",
+ "sim-diasca/src/core/src/plugins/class_PluginManager.beam",
+ "sim-diasca/src/core/src/plugins/sim_diasca_plugin.beam",
+ "sim-diasca/src/core/src/plugins/tests/my_plugin_example.beam",
+ "sim-diasca/src/core/src/random/class_RandomManager.beam",
+ "sim-diasca/src/core/src/random/class_StochasticActor.beam",
+ "sim-diasca/src/core/src/random/class_TestStochasticActor.beam",
+ "sim-diasca/src/core/src/resilience/class_ResilienceAgent.beam",
+ "sim-diasca/src/core/src/resilience/class_ResilienceManager.beam",
+ "sim-diasca/src/core/src/scheduling/class_Actor.beam",
+ "sim-diasca/src/core/src/scheduling/class_BroadcastingActor.beam",
+ "sim-diasca/src/core/src/scheduling/class_InstanceTracker.beam",
+ "sim-diasca/src/core/src/scheduling/class_TimeManager.beam",
+ "sim-diasca/src/core/src/scheduling/tests/class_TestActor.beam",
+ "sim-diasca/src/core/src/scheduling/tests/class_TestCircularActor.beam",
+ "sim-diasca/src/core/src/sim_diasca.beam",
+ "sim-diasca/src/models/equipment/src/class_Equipment.beam",
+ "sim-diasca/src/models/equipment/src/class_ReliabilityProbe.beam",
+ "sim-diasca/src/models/equipment/src/class_TestEquipment.beam",
+ "sim-diasca/src/models/reliability/failure/src/class_ExponentialFailureModel.beam",
+ "sim-diasca/src/models/reliability/failure/src/class_FailureModel.beam",
+ "sim-diasca/src/models/reliability/failure/src/class_GaussianFailureModel.beam",
+ "sim-diasca/src/models/reliability/reparation/src/class_GaussianRepairModel.beam",
+ "sim-diasca/src/models/reliability/reparation/src/class_RepairModel.beam",
+ "sim-diasca/src/models/reliability/reparation/src/class_UniformRepairModel.beam",
+ "sim-diasca/src/post-processing/src/class_TimeSeriesAnalyzer.beam",
+ "sim-diasca/src/post-processing/src/curve_selector_series_filter.beam",
+ "sim-diasca/src/post-processing/src/edit_time_series_app.beam",
+ "sim-diasca/src/post-processing/src/extrema_curve_filter.beam",
+ "sim-diasca/src/spatial-support/src/class_SpatialisedActor.beam",
+ "sim-diasca/src/spatial-support/src/class_TwoDimensionalEnvironment.beam",
+ "sim-diasca/src/spatial-support/src/tests/class_TestSpatialisedActor.beam",
+ "traces/src/class_TestTraceEmitter.beam",
+ "traces/src/class_TraceAggregator.beam","traces/src/class_TraceEmitter.beam",
+ "traces/src/class_TraceListener.beam",
+ "traces/src/class_TraceSupervisor.beam","traces/src/trace_enabled_app.beam",
+ "traces/src/traces.beam","traces/src/traces_for_apps.beam",
+ "traces/src/traces_for_tests.beam","wooper/meta_utils.beam",
+ "wooper/src/wooper.beam","wooper/src/wooper_class_manager.beam",
+ "wooper/src/wooper_instance_proxy.beam",
+ "wooper/src/wooper_serialisation.beam"].
+
+<0.44.0>|Deployment manager for Sim-Diasca Dataflow Example|Core.Deployment.Manager|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Built package contains 113 files and has for size 2 MiB, 548 KiB and 671 bytes.
+<0.44.0>|Deployment manager for Sim-Diasca Dataflow Example|Core.Deployment.Manager|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Deployment package has been successfully written to the 'Sim-Diasca-deployment-archive.sdar' file.
+<0.44.0>|Deployment manager for Sim-Diasca Dataflow Example|Core.Deployment.Manager|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Waiting deployment report from 1 host managers ([<0.47.0>]), using a time-out of 6 minutes, 42 seconds and 500 milliseconds.
+<0.47.0>|Host manager for the user host|Core.Deployment.ComputingHostManager|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Sending the package 'Sim-Diasca-deployment-archive.sdar' through sendfile.
+<9136.43.0>|Deployment agent on volt|Core.Deployment|undefined|19/4/2016 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Standalone.Deployment|6|Receiving of the simulation package started.
+<0.47.0>|Host manager for the user host|Core.Deployment.ComputingHostManager|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Package sent.
+<9136.43.0>|Deployment agent on volt|Core.Deployment|undefined|19/4/2016 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Standalone.Deployment|6|Simulation package fully received.
+<9136.43.0>|Deployment agent on volt|Core.Deployment|undefined|19/4/2016 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Standalone.Deployment|6|Received simulation package, whose size is 2658975 bytes, will extract it in deployment directory '/tmp/sim-diasca-Sim-Diasca_Dataflow_Example-boudevil-2016-4-19-at-11h-36m-32s-0a05275a/deployed-elements'.
+
+<9136.43.0>|Deployment agent on volt|Core.Deployment|undefined|19/4/2016 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Standalone.Deployment|6|Following 113 files were extracted in '/tmp/sim-diasca-Sim-Diasca_Dataflow_Example-boudevil-2016-4-19-at-11h-36m-32s-0a05275a/deployed-elements':
+["common/src/data-management/const_table.beam",
+ "common/src/data-management/hashtable.beam",
+ "common/src/data-management/lazy_hashtable.beam",
+ "common/src/data-management/list_hashtable.beam",
+ "common/src/data-management/map_hashtable.beam",
+ "common/src/data-management/option_list.beam",
+ "common/src/data-management/pair.beam",
+ "common/src/data-management/preferences.beam",
+ "common/src/data-management/simple_parse_transform_target.beam",
+ "common/src/data-management/table.beam",
+ "common/src/data-management/tracked_hashtable.beam",
+ "common/src/data-management/tree.beam","common/src/maths/bounding_box.beam",
+ "common/src/maths/linear.beam","common/src/maths/linear_2D.beam",
+ "common/src/maths/linear_3D.beam","common/src/maths/math_utils.beam",
+ "common/src/maths/polygon.beam","common/src/maths/rk4_solver.beam",
+ "common/src/user-interface/asset_tool_app.beam",
+ "common/src/user-interface/gui.beam",
+ "common/src/user-interface/gui_canvas.beam",
+ "common/src/user-interface/gui_color.beam",
+ "common/src/user-interface/gui_text.beam",
+ "common/src/utils/app_facilities.beam","common/src/utils/basic_utils.beam",
+ "common/src/utils/cipher_utils.beam","common/src/utils/code_utils.beam",
+ "common/src/utils/common_parse_transform.beam",
+ "common/src/utils/example_parse_transform.beam",
+ "common/src/utils/executable_utils.beam","common/src/utils/file_utils.beam",
+ "common/src/utils/fsm_utils.beam","common/src/utils/graph_utils.beam",
+ "common/src/utils/list_utils.beam","common/src/utils/meta_utils.beam",
+ "common/src/utils/most_basic_example_app.beam",
+ "common/src/utils/net_utils.beam","common/src/utils/random_utils.beam",
+ "common/src/utils/rest_utils.beam","common/src/utils/sms_utils.beam",
+ "common/src/utils/system_utils.beam","common/src/utils/test_facilities.beam",
+ "common/src/utils/text_utils.beam","common/src/utils/time_utils.beam",
+ "common/src/utils/unit_utils.beam","sim-diasca/meta_utils.beam",
+ "sim-diasca/src/core/generic/src/class_Describable.beam",
+ "sim-diasca/src/core/generic/src/class_Graphable.beam",
+ "sim-diasca/src/core/mesh/src/class_Mesh.beam",
+ "sim-diasca/src/core/space/src/class_Locatable.beam",
+ "sim-diasca/src/core/src/core_utils.beam",
+ "sim-diasca/src/core/src/data-management/data-exchange/class_DataExchangeTestActor.beam",
+ "sim-diasca/src/core/src/data-management/data-exchange/class_DataExchanger.beam",
+ "sim-diasca/src/core/src/data-management/data-storage/class_DataLogger.beam",
+ "sim-diasca/src/core/src/data-management/data-storage/class_DataLoggingActor.beam",
+ "sim-diasca/src/core/src/data-management/monitoring/performance/class_PerformanceTracker.beam",
+ "sim-diasca/src/core/src/data-management/monitoring/performance/class_PerformanceTracker_TestActor.beam",
+ "sim-diasca/src/core/src/data-management/monitoring/probe/class_Probe.beam",
+ "sim-diasca/src/core/src/data-management/monitoring/probe/generate_plots_for_time_series.beam",
+ "sim-diasca/src/core/src/data-management/result-management/class_ResultManager.beam",
+ "sim-diasca/src/core/src/data-management/result-management/class_ResultProducer.beam",
+ "sim-diasca/src/core/src/dataflow/class_DataflowActor.beam",
+ "sim-diasca/src/core/src/deployment/class_ComputingHostManager.beam",
+ "sim-diasca/src/core/src/deployment/class_DeploymentManager.beam",
+ "sim-diasca/src/core/src/deployment/deployment_agent.beam",
+ "sim-diasca/src/core/src/instance-creation/class_LoadBalancer.beam",
+ "sim-diasca/src/core/src/instance-creation/instance_loading.beam",
+ "sim-diasca/src/core/src/plugins/class_PluginManager.beam",
+ "sim-diasca/src/core/src/plugins/sim_diasca_plugin.beam",
+ "sim-diasca/src/core/src/plugins/tests/my_plugin_example.beam",
+ "sim-diasca/src/core/src/random/class_RandomManager.beam",
+ "sim-diasca/src/core/src/random/class_StochasticActor.beam",
+ "sim-diasca/src/core/src/random/class_TestStochasticActor.beam",
+ "sim-diasca/src/core/src/resilience/class_ResilienceAgent.beam",
+ "sim-diasca/src/core/src/resilience/class_ResilienceManager.beam",
+ "sim-diasca/src/core/src/scheduling/class_Actor.beam",
+ "sim-diasca/src/core/src/scheduling/class_BroadcastingActor.beam",
+ "sim-diasca/src/core/src/scheduling/class_InstanceTracker.beam",
+ "sim-diasca/src/core/src/scheduling/class_TimeManager.beam",
+ "sim-diasca/src/core/src/scheduling/tests/class_TestActor.beam",
+ "sim-diasca/src/core/src/scheduling/tests/class_TestCircularActor.beam",
+ "sim-diasca/src/core/src/sim_diasca.beam",
+ "sim-diasca/src/models/equipment/src/class_Equipment.beam",
+ "sim-diasca/src/models/equipment/src/class_ReliabilityProbe.beam",
+ "sim-diasca/src/models/equipment/src/class_TestEquipment.beam",
+ "sim-diasca/src/models/reliability/failure/src/class_ExponentialFailureModel.beam",
+ "sim-diasca/src/models/reliability/failure/src/class_FailureModel.beam",
+ "sim-diasca/src/models/reliability/failure/src/class_GaussianFailureModel.beam",
+ "sim-diasca/src/models/reliability/reparation/src/class_GaussianRepairModel.beam",
+ "sim-diasca/src/models/reliability/reparation/src/class_RepairModel.beam",
+ "sim-diasca/src/models/reliability/reparation/src/class_UniformRepairModel.beam",
+ "sim-diasca/src/post-processing/src/class_TimeSeriesAnalyzer.beam",
+ "sim-diasca/src/post-processing/src/curve_selector_series_filter.beam",
+ "sim-diasca/src/post-processing/src/edit_time_series_app.beam",
+ "sim-diasca/src/post-processing/src/extrema_curve_filter.beam",
+ "sim-diasca/src/spatial-support/src/class_SpatialisedActor.beam",
+ "sim-diasca/src/spatial-support/src/class_TwoDimensionalEnvironment.beam",
+ "sim-diasca/src/spatial-support/src/tests/class_TestSpatialisedActor.beam",
+ "traces/src/class_TestTraceEmitter.beam",
+ "traces/src/class_TraceAggregator.beam","traces/src/class_TraceEmitter.beam",
+ "traces/src/class_TraceListener.beam",
+ "traces/src/class_TraceSupervisor.beam","traces/src/trace_enabled_app.beam",
+ "traces/src/traces.beam","traces/src/traces_for_apps.beam",
+ "traces/src/traces_for_tests.beam","wooper/meta_utils.beam",
+ "wooper/src/wooper.beam","wooper/src/wooper_class_manager.beam",
+ "wooper/src/wooper_instance_proxy.beam",
+ "wooper/src/wooper_serialisation.beam"].
+
+<9136.43.0>|Deployment agent on volt|Core.Deployment|undefined|19/4/2016 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Standalone.Deployment|5|Following BEAM directories were added to code path:
+["common/src/maths","common/src/user-interface","common/src/utils",
+ "common/src/data-management","common/src","traces/src",
+ "sim-diasca/src/spatial-support/src/tests",
+ "sim-diasca/src/spatial-support/src","sim-diasca/src/post-processing/src",
+ "sim-diasca/src/models/reliability/failure/src",
+ "sim-diasca/src/models/reliability/reparation/src",
+ "sim-diasca/src/models/reliability/failure",
+ "sim-diasca/src/models/reliability/reparation",
+ "sim-diasca/src/models/equipment/src","sim-diasca/src/models/reliability",
+ "sim-diasca/src/models/equipment","sim-diasca/src/core/space/src",
+ "sim-diasca/src/core/mesh/src","sim-diasca/src/core/generic/src",
+ "sim-diasca/src/core/src/scheduling/tests",
+ "sim-diasca/src/core/src/data-management/monitoring/probe",
+ "sim-diasca/src/core/src/data-management/monitoring/performance",
+ "sim-diasca/src/core/src/data-management/result-management",
+ "sim-diasca/src/core/src/data-management/data-storage",
+ "sim-diasca/src/core/src/data-management/monitoring",
+ "sim-diasca/src/core/src/data-management/data-exchange",
+ "sim-diasca/src/core/src/plugins/tests","sim-diasca/src/core/src/random",
+ "sim-diasca/src/core/src/scheduling","sim-diasca/src/core/src/resilience",
+ "sim-diasca/src/core/src/instance-creation",
+ "sim-diasca/src/core/src/deployment","sim-diasca/src/core/src/dataflow",
+ "sim-diasca/src/core/src/data-management","sim-diasca/src/core/src/plugins",
+ "sim-diasca/src/core/space","sim-diasca/src/core/mesh",
+ "sim-diasca/src/core/generic","sim-diasca/src/core/src",
+ "sim-diasca/src/spatial-support","sim-diasca/src/post-processing",
+ "sim-diasca/src/models","sim-diasca/src/core","sim-diasca/src","wooper/src",
+ "common","traces","sim-diasca","wooper"].
+
+<0.44.0>|Deployment manager for Sim-Diasca Dataflow Example|Core.Deployment.Manager|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Received notification of set-up success from manager <0.47.0>: deployment on host 'volt.atlas.edf.fr' starts now, with user boudevil, for a target node named Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr.
+<0.44.0>|Deployment manager for Sim-Diasca Dataflow Example|Core.Deployment.Manager|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|The single specified computing host is available, using corresponding node: Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr.
+
+<0.46.0>|Plugin Manager|Core.PluginManagement|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Notifying all plugins of event 'on_technical_settings_available' parametrised with '{technical_settings,
+                                                                                     ['Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr'],
+                                                                                     '0a05275a-58b4-446f-8c47-6824ec5d5aff'}'.
+<0.44.0>|Deployment manager for Sim-Diasca Dataflow Example|Core.Deployment.Manager|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Simulation services dispatched as:  + load-balancing: Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr
+ + time management: root on Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr, 0 agents on []
+ + data-logging: Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr
+ + data-exchanging: root on Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr, 0 agents on []
+ + result management: dataflow_example_run-boudevil@volt.atlas.edf.fr
+ + instance tracking: root on Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr, 1 agents on ['dataflow_example_run-boudevil@volt.atlas.edf.fr']
+ + performance tracking: dataflow_example_run-boudevil@volt.atlas.edf.fr
+ + resilience management: root on dataflow_example_run-boudevil@volt.atlas.edf.fr, 1 agents on ['Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr']
+
+<0.44.0>|Deployment manager for Sim-Diasca Dataflow Example|Core.Deployment.Manager|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Setting up simulation services.
+<9136.51.0>|Instance tracker|Core.Tracker.Instances|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Creating a new root instance tracker whose troubleshooting mode is enabled.
+<0.65.0>|Instance tracker|Core.Tracker.Instances|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Creating a new child instance tracker whose troubleshooting mode is enabled.
+<9136.53.0>|Time Manager|Core.TimeManagement|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Root time manager registered as 'sim_diasca_time_manager', locally and globally.
+<9136.53.0>|Time Manager|Core.TimeManagement|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Creating a root time manager in batch mode with an actual fundamental simulation frequency of approximately 0.00Hz; in virtual time, each simulation tick will last exactly for 86400.000000s.
+<9136.53.0>|Time Manager|Core.TimeManagement|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Time manager created, default initial tick is 730485.
+<0.66.0>|Result Manager|Core.ResultManagement|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Created with following result specification: all_outputs and following meta-data:  + version of the Common layer: 0.1
+ + version of the WOOPER layer: 1.0
+ + version of the Traces layer: 0.3
+ + version of the Sim-Diasca engine: 2.2.10
+ + name of the simulation case: Sim-Diasca Dataflow Example
+ + tick duration (in virtual seconds): 86400.000000
+
+<9136.54.0>|Load Balancer|Trace.Emitter|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Creating a new actor named 'Load Balancer' and bearing abstract identifier 1.
+<9136.54.0>|Load Balancer|Core.LoadBalancing|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Simulation will be totally reproducible, using default seed ({1,7,11}).
+<9136.54.0>|Load Balancer|Core.LoadBalancing|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Creating a new load balancer whose placement policy is round_robin, whose node tolerance is allow_unavailable_nodes, whose 1 validated computing nodes are:
+ + Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr
+
+<9136.56.0>|Root Data Exchanger|Core.DataExchange|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Creating a root data exchanger with no configuration file to read.
+<0.67.0>|Resilience Manager|Core.Resilience.Manager|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Resilience manager set to level k=0 (no serialisation period applies),managing 0 protected node(s):
+having 1 single-point of failure node(s):
+ + Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr
+and using following k-map:
+no k-map defined. Serialisation history: []
+<0.46.0>|Plugin Manager|Core.PluginManagement|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Notifying all plugins of event 'on_deployment_stop'.
+<0.46.0>|Plugin Manager|Core.PluginManagement|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Notifying all plugins of event 'on_case_initialisation_start'.
+<9136.54.0>|Load Balancer|Core.LoadBalancing|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Creation of initial instances from files.
+<9136.54.0>|Load Balancer|Core.LoadBalancing|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|No initialisation files specified.
+<9136.54.0>|Load Balancer|Core.LoadBalancing|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|All instances loaded from files (if any).
+<9136.57.0>|A Source Block|Trace.Emitter|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Creating a new actor named 'A Source Block' and bearing abstract identifier 2.
+<9136.58.0>|Block B1|Trace.Emitter|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Creating a new actor named 'Block B1' and bearing abstract identifier 3.
+<9136.59.0>|Sinky|Trace.Emitter|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Creating a new actor named 'Sinky' and bearing abstract identifier 4.
+<9136.60.0>|Strange Disconnected Pizzaiolo|Trace.Emitter|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Creating a new actor named 'Strange Disconnected Pizzaiolo' and bearing abstract identifier 5.
+<9136.61.0>|My Block|Trace.Emitter|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Creating a new actor named 'My Block' and bearing abstract identifier 6.
+<0.2.0>|(test)|Test.Uncategorized|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Test|4|Starting simulation at 2020/1/1 0:00:00, for a planned stop at ending timestamp 2025/1/1 0:00:00.
+<0.2.0>|(test)|Test.Uncategorized|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Test|4|Waiting for the simulation to end, since having been declared as a simulation listener.
+<9136.53.0>|Time Manager|Core.TimeManagement|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|New initial simulation tick is #737790.
+<9136.53.0>|Time Manager|Core.TimeManagement|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|New final simulation tick is 739617 (corresponding to final date 2025/1/1 0:00:00).
+<0.46.0>|Plugin Manager|Core.PluginManagement|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Notifying all plugins of event 'on_case_initialisation_stop'.
+<9136.53.0>|Time Manager|Core.TimeManagement|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Watchdog <0.62.0> created and running, with a time-out duration of 15000 ms; notifying now initial actors that the simulation started.
+<9136.53.0>|Time Manager|Core.TimeManagement|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Time manager to start simulation at tick offset #0 diasca 0, defined relatively to its initial tick, which was 737790.
+<9136.53.0>|Time Manager|Core.TimeManagement|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Notifying all child managers that the simulation starts.
+<9136.53.0>|Time Manager|Core.TimeManagement|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Notifying, based on chunks, all 6 initial actors that the simulation starts.
+<9136.53.0>|Time Manager|Core.TimeManagement|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|All 6 actors start acknowledgements received.
+<9136.53.0>|Time Manager|Core.TimeManagement|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|No start acknowledgement from child manager to be waited.
+<9136.53.0>|Time Manager|Core.TimeManagement|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|At this level the simulation is now ready to start.
+<9136.53.0>|Time Manager|Core.TimeManagement|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Simulation started at simulation time: 1/1/2020 0:00:00 (tick 737790), real time: 19/4/2016 11:36:34 with a simulation frequency of approximately 0.000012Hz (period of exactly 1 day). Simulation will stop no later than tick 739617 (i.e. after 1827 ticks, which is a duration of 1827 days in virtual time).
+<9136.53.0>|Time Manager|Core.TimeManagement|-1|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Creating simulation-time tracker.
+<9136.53.0>|Time Manager|Core.TimeManagement|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Notifying time listeners.
+<0.46.0>|Plugin Manager|Core.PluginManagement|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Notifying all plugins of event 'on_simulation_start'.
+<0.66.0>|Result Manager|Core.ResultManagement|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|At simulation start, no expected result is identified.
+<9136.53.0>|Time Manager|Core.TimeManagement|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Starting simulation clock in batch (non-interactive mode) at simulation time: 31/12/2019 0:00:00 (tick 737789), real time: 19/4/2016 11:36:34 with a simulation frequency of 0.000012Hz (period of exactly 1 day).
+<0.46.0>|Plugin Manager|Core.PluginManagement|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Notifying all plugins of event 'on_simulation_bootstrap_start'.
+<9136.53.0>|Time Manager|Core.TimeManagement|0|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Simulation-time milestone triggered at tick offset #0, while current wall-clock time is 2016/4/19 11:36:34.
+
+<0.46.0>|Plugin Manager|Core.PluginManagement|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Notifying all plugins of event 'on_simulation_tick_milestone_met' parametrised with '0'.
+<9136.54.0>|Load Balancer|Core.LoadBalancing|0|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Notifying the initial actors of their first diasca.
+<9136.54.0>|Load Balancer|Core.LoadBalancing|0|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|All initial actors just notified of their first diasca, waiting for their processing.
+<0.46.0>|Plugin Manager|Core.PluginManagement|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Notifying all plugins of event 'on_simulation_bootstrap_stop'.
+<9136.57.0>|A Source Block|Core.Dataflow.Block|0|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Created Block 'A Source Block', applying the activate_when_all_ready policy, having no input port and 2 output ports:
+ + output port named 'Fuel', expecting values of type float, never having sent any value, not feeding any input port
+ + output port named 'Spark', expecting values of type boolean, never having sent any value, not feeding any input port
+.
+<9136.59.0>|Sinky|Core.Dataflow.Block|0|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Created Block 'Sinky', applying the activate_on_new_ready policy, having 3 input ports:
+ + input port named 'Additional Information', expecting values of type float, not set, never having received a value, not fed by an output port
+ + input port named 'Final Results', expecting values of type float, not set, never having received a value, not fed by an output port
+ + input port named 'Other Results', expecting values of type float, not set, never having received a value, not fed by an output port
+ and no output port.
+<9136.58.0>|Block B1|Core.Dataflow.Block|0|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Created Block 'Block B1', applying the activate_on_new_ready policy, having 2 input ports:
+ + input port named 'I1', expecting values of type integer, not set, never having received a value, not fed by an output port
+ + input port named 'I2', expecting values of type float, not set, never having received a value, not fed by an output port
+ and 3 output ports:
+ + output port named 'O1', expecting values of type boolean, never having sent any value, not feeding any input port
+ + output port named 'O2', expecting values of type boolean, never having sent any value, not feeding any input port
+ + output port named 'O3', expecting values of type boolean, never having sent any value, not feeding any input port
+.
+<9136.60.0>|Strange Disconnected Pizzaiolo|Core.Dataflow.Block|0|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Created Block 'Strange Disconnected Pizzaiolo', applying the activate_on_new_ready policy, having 3 input ports:
+ + input port named 'Cheese', expecting values of type integer, not set, never having received a value, not fed by an output port
+ + input port named 'Pepperoni', expecting values of type integer, not set, never having received a value, not fed by an output port
+ + input port named 'Tomato', expecting values of type integer, not set, never having received a value, not fed by an output port
+ and 2 output ports:
+ + output port named 'Pasta', expecting values of type integer, never having sent any value, not feeding any input port
+ + output port named 'Pizza', expecting values of type integer, never having sent any value, not feeding any input port
+.
+<9136.61.0>|My Block|Core.Dataflow.Block|0|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Created Block 'My Block', applying the activate_when_all_ready policy, having a single input port named 'my_only_input', expecting values of type boolean, not set, never having received a value, not fed by an output port and 4 output ports:
+ + output port named 'a_fourth_output', expecting values of type tuple, never having sent any value, not feeding any input port
+ + output port named 'a_third_output', expecting values of type list, never having sent any value, not feeding any input port
+ + output port named 'an_output', expecting values of type atom, never having sent any value, not feeding any input port
+ + output port named 'another_output', expecting values of type integer, never having sent any value, not feeding any input port
+.
+<9136.53.0>|Time Manager|Core.TimeManagement|0|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|At the global level, there is no actor to trigger anymore after this diasca (1) nor spontaneous action recorded after this tick (offset #0), therefore no future event could possibly occur. Stopping thus now the whole simulation.
+<0.66.0>|Result Manager|Core.ResultManagement|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Simulation succeeded, collecting results now.
+<0.46.0>|Plugin Manager|Core.PluginManagement|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Notifying all plugins of event 'on_result_gathering_start'.
+<9136.53.0>|Time Manager|Core.TimeManagement|0|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Stopping simulation clock at simulation time: 1/1/2020 0:00:00 (tick 737790), real time: 19/4/2016 11:36:34.
+<9136.53.0>|Time Manager|Core.TimeManagement|0|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Taking care of pending already terminated actors.
+<9136.53.0>|Time Manager|Core.TimeManagement|0|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Taking care of already terminating actors.
+<9136.53.0>|Time Manager|Core.TimeManagement|0|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Taking care now of still running actors.
+<9136.53.0>|Time Manager|Core.TimeManagement|0|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Stopping watchdog, trackers and child managers.
+<0.66.0>|Result Manager|Core.ResultManagement|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Simulation succeeded, collecting results now from producers in result directory '/home/boudevil/Projects/Sim-Diasca/sources/local-clones/sim-diasca-current-develop-branch/sim-diasca/src/core/src/dataflow/tests/Sim-Diasca_Dataflow_Example-on-2016-4-19-at-11h-36m-32s-by-boudevil-0a05275a/simulation-results', while current one is '/home/boudevil/Projects/Sim-Diasca/sources/local-clones/sim-diasca-current-develop-branch/sim-diasca/src/core/src/dataflow/tests'.
+
+<0.66.0>|Result Manager|Core.ResultManagement|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|All results successfully gathered, notifying all listeners ([]).
+<0.46.0>|Plugin Manager|Core.PluginManagement|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Notifying all plugins of event 'on_result_gathering_stop'.
+<9136.62.0>|<0-62-0>|Standalone.Uncategorized|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Standalone|6|Watchdog removed (synchronous deletion).
+<9136.53.0>|Time Manager|Core.TimeManagement|0|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Flushing then any notification(s) sent by the watchdog (<0.62.0>) in-between.
+<9136.53.0>|Time Manager|Core.TimeManagement|0|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Stop successful.
+<0.2.0>|(test)|Test.Uncategorized|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Test|4|Simulation stopped spontaneously, specified stop tick must have been reached.
+<0.2.0>|(test)|Test.Uncategorized|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Test|4|Browsing the report results, if in batch mode.
+<0.46.0>|Plugin Manager|Core.PluginManagement|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Notifying all plugins of event 'on_simulation_stop'.
+<0.2.0>|<0-2-0>|class_DeploymentManager|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Standalone|4|Removing deployment manager, which will in turn take care of the deletion of all actors and agents on all nodes.
+<0.44.0>|Deployment manager for Sim-Diasca Dataflow Example|Core.Deployment.Manager|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Deleting deployment manager.
+<0.67.0>|Resilience Manager|Core.Resilience.Manager|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Deleting resilience manager.
+<9136.56.0>|Root Data Exchanger|Core.DataExchange|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Deleting data exchanger.
+<0.67.0>|Resilience Manager|Core.Resilience.Manager|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Resilience manager deleted.
+<0.66.0>|Result Manager|Core.ResultManagement|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Deleting result manager.
+<0.66.0>|Result Manager|Core.ResultManagement|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Deleting 0 basic probes.
+<9136.53.0>|Time Manager|Core.TimeManagement|0|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Deleting the time manager.
+<9136.53.0>|Time Manager|Core.TimeManagement|0|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Time manager deleted.
+<0.46.0>|Plugin Manager|Core.PluginManagement|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|4|Notifying all plugins of event 'on_simulator_stop'.
+<0.46.0>|Plugin Manager|Core.PluginManagement|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Deleting plugin manager.
+<9136.54.0>|Load Balancer|Core.LoadBalancing|0|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Deleting load balancer.
+<0.46.0>|Plugin Manager|Core.PluginManagement|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Plugin manager deleted.
+<9136.54.0>|Load Balancer|Core.LoadBalancing|0|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Load balancer deleted.
+<9136.51.0>|Instance tracker|Core.Tracker.Instances|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Deleting instance tracker.
+<0.65.0>|Instance tracker|Core.Tracker.Instances|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Deleting instance tracker.
+<0.65.0>|Instance tracker|Core.Tracker.Instances|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Instance tracker deleted.
+<9136.51.0>|Instance tracker|Core.Tracker.Instances|none|2016/4/19 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Instance tracker deleted.
+<0.47.0>|Host manager for the user host|Core.Deployment.ComputingHostManager|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|5|Deleting computing-host manager.
+<0.47.0>|Host manager for the user host|Core.Deployment.ComputingHostManager|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Computing-host manager deleted.
+<0.44.0>|Deployment manager for Sim-Diasca Dataflow Example|Core.Deployment.Manager|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Execution.Uncategorized|6|Deployment manager deleted.
+<0.2.0>|<0-2-0>|class_DeploymentManager|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Standalone|4|Overall shutdown succeeded.
+<9136.43.0>|Deployment agent on volt|Core.Deployment|undefined|19/4/2016 11:36:34|Sim-Diasca_Dataflow_Example-boudevil@volt.atlas.edf.fr|Standalone.Deployment|4|Removing deployment directory '/tmp/sim-diasca-Sim-Diasca_Dataflow_Example-boudevil-2016-4-19-at-11h-36m-32s-0a05275a' and terminating now.
+<0.2.0>|(test)|Test.Uncategorized|none|2016/4/19 11:36:34|dataflow_example_run-boudevil@volt.atlas.edf.fr|Test|4|Stopping test dataflow_example_test.

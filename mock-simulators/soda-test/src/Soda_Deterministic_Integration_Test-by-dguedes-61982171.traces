@@ -1,0 +1,3 @@
+<0.64.0>|Trace Aggregator|Trace.Emitter|none|2018/6/11 17:23:26|local_node|Trace Management|4|Trace aggregator created, trace filename is '/home/dguedes/Workspace/interscsimulator/mock-simulators/soda-test/src/soda_deterministic_integration_test.traces', trace type is 'log_mx_traces', and trace title is 'Ceylan'.
+
+<0.5.0>|(case)|Case.Uncategorized|none|2018/6/11 17:23:26|local_node|Case|4|Starting case soda_deterministic_integration_test.

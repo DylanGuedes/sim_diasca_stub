@@ -1,0 +1,2 @@
+     Generating PDF documentation tmp-rst/SimDiasca-developer-guide-english.pdf
+----> Error: unable to find an executable tool to convert docutils files to LateX (rst2latex).
