@@ -1,11 +1,13 @@
-FROM debian:unstable
+FROM erlang:20
 
-RUN apt update && apt install make erlang -qy
-ADD . /src
-RUN cd /src && make all
+ENV USER root
 
-RUN echo "docker.simulator" > /etc/hostname
-RUN echo "127.0.0.1 docker.simulator localhost" > /etc/hosts
-#RUN /etc/init.d/hostname.sh start
+RUN apt update && apt install -y \
+  make \
+  uuid-runtime && \
+  mkdir -p /sim-diasca 
 
-CMD [ "make", "smart_city_run", "CMD_LINE_OPT='--batch'" ]
+WORKDIR /sim-diasca
+COPY . /sim-diasca
+
+RUN make clean && make all

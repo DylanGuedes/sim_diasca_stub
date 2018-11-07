@@ -1,8 +1,16 @@
 version: '3'
+
 services:
-    simulator:
-        image: kanashiro/interscsimulator:test
-        environment:
-            - RABBITMQ_HOST=localhost
-        network_mode: "host"
-        tty: true
+  simulator:
+    build: .
+    tty: true
+    hostname: interscity.local
+    volumes:
+      - '.:/sim-diasca'
+    command: bash -c "make all && cd mock-simulators/smart_city_model/src && make all && ls .. && make smart_city_run CMD_LINE_OPT='--batch'"
+
+
+networks:
+  default:
+    external:
+      name: interscity
